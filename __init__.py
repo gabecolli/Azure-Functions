@@ -10,7 +10,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     
 
     if 1 > 0:
-        return func.HttpResponse(f"{req_body}")
+        return func.HttpResponse(f"{req_body} was the data you passed from your mobile app.")
     else:
         return func.HttpResponse(
             "Please pass a name on the query string or in the request body",
